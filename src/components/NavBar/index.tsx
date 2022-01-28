@@ -1,6 +1,6 @@
 import { Container, Header, Image, List, ListItem } from './styles';
 
-import logoImg from '../assets/favicon.svg'
+import logoImg from '../../assets/favicon.svg';
 
 export function NavBar() {
   return (

@@ -1,21 +1,28 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  width: 100vw;
+  width: 100%;
   height: 125px;
 
-  background-color: #111111;
+  background-image: linear-gradient(90deg, #bd34fe, #ffa800);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 
 export const Container = styled.div`
   height: 100%;
 
-  margin: 0 125px;
-  background-color: #111111;
+  max-width: 1120px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1160px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Image = styled.img`
