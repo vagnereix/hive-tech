@@ -1,3 +1,4 @@
+import 'aos/dist/aos.css';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
@@ -51,6 +52,19 @@ export const GlobalStyles = createGlobalStyle`
       transform: translate(-20px, -50px);
     }
     to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  // New animation to AOS library
+  [data-aos='entry-animation'] {
+    opacity: 0;
+    transform: translate(-20px, -50px);
+
+    transition-property: transform, opacity;
+
+    &.aos-animate {
       opacity: 1;
       transform: translate(0, 0);
     }

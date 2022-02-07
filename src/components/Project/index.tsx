@@ -13,7 +13,7 @@ import {
 
 export function Project() {
   return (
-    <Container>
+    <Container data-aos='entry-animation' data-aos-easing='linear'>
       <ImageBox>
         <Image></Image>
       </ImageBox>
