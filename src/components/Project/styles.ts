@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 500px;
-  height: 430px;
+  max-width: 500px;
+  aspect-ratio: 1 / 0.75;
   border-radius: 0.25rem;
 
   &:nth-child(2n) {

@@ -13,11 +13,16 @@ export const Header = styled.header`
 export const Container = styled.div`
   height: 100%;
 
-  margin: 0 125px;
+  max-width: 1120px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1160px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Image = styled.img`

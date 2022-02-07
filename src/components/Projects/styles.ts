@@ -2,7 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   position: relative;
-  margin: 100px 125px;
+
+  max-width: 1120px;
+  margin: 100px auto;
+
+  @media (max-width: 1160px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Image = styled.img`
@@ -13,17 +19,20 @@ export const Image = styled.img`
   z-index: -1;
   transform: translate(-50%, -50%);
 
-  width: 800px;
+  width: 100%;
   opacity: 0.25;
+  max-width: 800px;
+  aspect-ratio: 1 / 0.9;
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
   gap: 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 `;
 
 export const Text = styled.span`
