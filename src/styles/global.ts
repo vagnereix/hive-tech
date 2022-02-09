@@ -60,7 +60,7 @@ export const GlobalStyles = createGlobalStyle`
   // New animation to AOS library
   [data-aos='entry-animation'] {
     opacity: 0;
-    transform: translate(-20px, -50px);
+    transform: translate(-50px, -60px);
 
     transition-property: transform, opacity;
 

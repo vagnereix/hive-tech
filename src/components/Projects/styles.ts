@@ -23,6 +23,20 @@ export const Image = styled.img`
   opacity: 0.25;
   max-width: 800px;
   aspect-ratio: 1 / 0.9;
+
+  animation: entryImage 1s linear;
+
+  @keyframes entryImage {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+      opacity: 0.25;
+      transform: scale(0);
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
 `;
 
 export const Content = styled.div`

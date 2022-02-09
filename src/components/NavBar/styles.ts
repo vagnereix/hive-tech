@@ -28,7 +28,26 @@ export const Container = styled.div`
 export const Image = styled.img`
   height: 80px;
   cursor: pointer;
-  animation: entryAnimation 1s linear forwards;
+
+  &:focus,
+  &:focus-visible {
+    animation: pulse 0.5s linear;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.8);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 `;
 
 export const List = styled.ul`
@@ -37,8 +56,6 @@ export const List = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  animation: entryAnimation 1s linear forwards;
 `;
 
 export const ListItem = styled.li`

@@ -15,6 +15,7 @@ export function Projects() {
         <Project />
         <Project />
         <Project />
+        <Project />
       </Content>
     </Container>
   );

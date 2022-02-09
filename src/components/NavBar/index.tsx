@@ -6,9 +6,14 @@ export function NavBar() {
   return (
     <Header>
       <Container>
-        <Image src={logoImg} alt='Logo Hiv Tech' />
+        <Image
+          data-aos='entry-animation'
+          tabIndex={1}
+          src={logoImg}
+          alt='Logo Hiv Tech'
+        />
 
-        <List>
+        <List role='list' data-aos='entry-animation'>
           <ListItem>Projetos</ListItem>
           <ListItem>Resumo</ListItem>
           <ListItem>Contato</ListItem>

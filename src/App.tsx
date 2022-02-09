@@ -1,5 +1,6 @@
 import Aos from 'aos';
 import { useEffect } from 'react';
+import { MainProject } from './components/MainProject';
 import { NavBar } from './components/NavBar';
 import { Projects } from './components/Projects';
 
@@ -15,6 +16,7 @@ function App() {
       <GlobalStyles />
       <NavBar />
       <Projects />
+      <MainProject />
     </>
   );
 }
