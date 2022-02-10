@@ -9,7 +9,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="ViteApp" src="./src/assets/presentation.png" width="80%"/>
+    <img alt="ViteApp" src="./src/assets/presentation.gif" width="80%"/>
 </h1>
 
 <br>
